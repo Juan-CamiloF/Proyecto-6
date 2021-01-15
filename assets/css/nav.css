@@ -17,6 +17,7 @@ header {
     align-items: center;
     box-shadow: 0 0 8px var(--color);
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 .menu li > a {
     padding: 0 20px;
@@ -26,4 +27,21 @@ header {
 }
 .menu li > a:hover{
     text-decoration: underline;
+}
+@media screen and (max-width:457px){
+    header{
+        justify-content: center;
+        padding: 20px 25px;
+    }
+    nav{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:343px){
+    header{
+        padding: 20px 10px;
+    }
+    .menu li > a{
+        padding: 0 10px;
+    }
 }

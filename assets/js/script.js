@@ -21,14 +21,14 @@ form.addEventListener('submit',(e)=>{
         alertEdad.innerText=('Por favor llene el campo');
     }
     if(inombre != '' && ialbum != '' && iedad>0){
-        alert("Registro Exitoso")
+        swal("Agregado!", "", "success");
         const artista={
             nombre:inombre,
             album:ialbum,
             edad:iedad
         }
         losArtistas(artista);
-        registro.innerHTML='Registro exitoso chikita'
+        registro.innerHTML='Puede ver los datos en la lista'
     }
 })
 
